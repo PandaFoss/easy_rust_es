@@ -130,29 +130,31 @@ Soy un canadiense que vive en Corea, y escribí Easy Rust mientras pensaba en c�
   - [Cargo doc](#cargo-doc)
   - [Fin?](#Fin?)
 
-# Part 1 - Rust in your browser
+# Parte 1 - Rust en tu navegador
 
-This book has two parts. In Part 1, you will learn as much Rust as you can just in your browser. You can actually learn almost everything you need to know without installing Rust, so Part 1 is very long. Then at the end is Part 2. It is much shorter, and is about Rust on your computer. That's where you will learn everything else you need to know that you can only do outside of a browser. Some examples are: working with files, taking user input, graphics, and personal settings. Hopefully, by the end of Part 1 you will like Rust enough that you will install it. And if you don't, no problem - Part 1 teaches you so much that you won't mind.
+Este libro tiene dos partes. En la Parte 1, aprenderás Rust tanto como puedas sólo en tu navegador. En realidad, puedes aprender casi todo lo que necesitas saber sin instalar Rust, así que la Parte 1 es muy larga. Luego, al final, está la Parte 2. Es mucho más corta, y es sobre Rust en tu ordenador. Ahí es donde aprenderás todo lo demás que necesitas saber y que sólo puedes hacer fuera de un navegador. Algunos ejemplos son: trabajar con archivos, tomar la entrada del usuario, los gráficos y la configuración personal. Con suerte, al final de la Parte 1 te gustará Rust lo suficiente como para instalarlo. Y si no lo haces, no hay problema - la Parte 1 te enseña tanto que no te importará.
 
 ## Rust Playground
-**[See this chapter on YouTube](https://youtu.be/-lYeJeQ11OI)**
+**[Mira este capítlo en YouTube (en inglés)](https://youtu.be/-lYeJeQ11OI)**
 
-Maybe you don't want to install Rust yet, and that's okay. You can go to [https://play.rust-lang.org/](https://play.rust-lang.org/) and start writing Rust without leaving your browser. You can write your code there and click Run to see the results. You can run most of the samples in this book inside the Playground in your browser. Only near the end you will see samples that go beyond what you can do in the Playground (like opening files).
+Tal vez no quieras instalar Rust todavía, y eso está bien. Puedes ir a [https://play.rust-lang.org/](https://play.rust-lang.org/) y empezar a escribir Rust sin salir de tu navegador. Puedes escribir tu código allí y hacer clic en Ejecutar para ver los resultados. Puedes ejecutar la mayoría de los ejemplos de este libro dentro del Playground de tu navegador. Sólo cerca del final verás ejemplos que van más allá de lo que puedes hacer en el Playground (como abrir archivos).
 
-Here are some tips when using the Rust Playground:
+Estos son algunos consejos para utilizar Rust Playground:
 
-- Run your code with Run
-- Change Debug to Release if you want your code to be faster. Debug: compiles faster, runs slower, contains debug information. Release: compiles slower, runs much faster, removes debug information.
-- Click on Share to get a url link. You can use that to share your code if you want help. After you click share, you can click on `Open a new thread in the Rust user forum` to ask people there for help right away.
-- Tools: Rustfmt will format your code nicely.
-- Tools: Clippy will give you extra information about how to make your code better.
-- Config: here you can change your theme to dark mode so you can work at night, and many other configurations.
+- Ejecuta tu código con Run
+- Cambia Debug por Release si quieres que tu código sea más rápido. Debug: compila más rápido, se ejecuta más lento, contiene información de depuración. Release: compila más lento, se ejecuta mucho más rápido, elimina la información de depuración.
+- Haz clic en Share para obtener un enlace url. Puedes utilizarlo para compartir tu código si quieres ayuda. Después de hacer clic en Share, puedes hacer clic en `Open a new thread in the Rust user forum` para pedir ayuda en el foro de usuarios de Rust de inmediato.
+- Tools: Rustfmt formateará tu código de una manera agradable.
+- Tools: Clippy te dará información extra sobre cómo mejorar tu código.
+- Config: aquí puedes cambiar tu tema a modo oscuro para poder trabajar de noche, y muchas otras configuraciones.
 
-If you want to install Rust, go here [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install) and follow the instructions. Usually you will use `rustup` to install and update Rust.
+Si quieres instalar Rust, ve aquí [https://www.rust-lang.org/es/tools/install](https://www.rust-lang.org/es/tools/install) y sigue las instrucciones. Normalmente usarás `rustup` para instalar y actualizar Rust.
 
-## 🚧 and ⚠️
+## 🚧 y ⚠️
 
-Sometimes the code examples in the book don't work. If an example doesn't work, it will have a 🚧 or a ⚠️ in it. 🚧 is like "under construction": it means that the code is not complete. Rust needs a `fn main()` (a main function) to run, but sometimes we just want to look at small pieces of code so it won't have a `fn main()`. Those examples are correct, but need a `fn main()` for you to run them. And some code examples show you a problem that we will fix. Those ones might have a `fn main()` but generate an error, and so they will have a ⚠️.
+A veces los ejemplos de código del libro no funcionan. Si un ejemplo no funciona, tendrá un 🚧 o un ⚠️ en él. 🚧 es como "en construcción": significa que el código no está completo. Rust necesita una `fn main()` (una función principal) para ejecutarse, pero a veces sólo queremos ver pequeños trozos de código para que no tenga una `fn main()`. Esos ejemplos son correctos, pero necesitan un `fn main()` para que se ejecuten. Y algunos ejemplos de código muestran un problema que arreglaremos. Esos pueden tener un `fn main()` pero generar un error, y por eso tendrán un ⚠️.
+
+En la versión en español añadimos **✍️ N. del T.** para referirnos a información o advertencias que nos hace el traductor. En ocasiones hay ciertos comentarios que al traducirlos del inglés al español pierden su significado original.
 
 ## Comments
 **[See this chapter on YouTube](https://youtu.be/fJ7jBZG_Rpo)**
