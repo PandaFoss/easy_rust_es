@@ -156,22 +156,22 @@ A veces los ejemplos de código del libro no funcionan. Si un ejemplo no funcion
 
 En la versión en español añadimos **✍️ N. del T.** para referirnos a información o advertencias que nos hace el traductor. En ocasiones hay ciertos comentarios que al traducirlos del inglés al español pierden su significado original.
 
-## Comments
-**[See this chapter on YouTube](https://youtu.be/fJ7jBZG_Rpo)**
+## Comentarios
+**[Mira este capítulo en YouTube (en inglés)](https://youtu.be/fJ7jBZG_Rpo)**
 
-Comments are made for programmers to read, not the computer. It's good to write comments to help other people understand your code.  It's also good to help you understand your code later.  (Many people write good code but then forget why they wrote it.) To write comments in Rust you usually use `//`:
+Los comentarios están hechos para que los lean los programadores, no la computadora. Es bueno escribir comentarios para ayudar a otras personas a entender tu código.  También es bueno para ayudarte a entender tu código después.  (Mucha gente escribe un buen código pero luego se olvida de por qué lo escribió). Para escribir comentarios en Rust se suele utilizar `//`.
 
 ```rust
 fn main() {
-    // Rust programs start with fn main()
-    // You put the code inside a block. It starts with { and ends with }
-    let some_number = 100; // We can write as much as we want here and the compiler won't look at it
+    // Los programas en Rust comienzan con fn main()
+    // Coloca el código dentro de un bloque. Estos comienzan con { y finalizan con }
+    let some_number = 100; // Podemos escribir todo el código que querramos aquí y el compilador no lo mirará
 }
 ```
 
-When you do this, the compiler won't look at anything to the right of the `//`.
+Cuando se hace esto, el compilador no mirará nada a la derecha del `//`.
 
-There is another kind of comment that you write with `/*` to start and `*/` to end. This one is useful to write in the middle of your code.
+Hay otro tipo de comentario que se escribe con `/*` al comienzo y `*/` al final. Este es útil para escribir en medio de tu código.
 
 ```rust
 fn main() {
@@ -179,21 +179,21 @@ fn main() {
 }
 ```
 
-To the compiler, `let some_number/*: i16*/ = 100;` looks like `let some_number = 100;`.
+Para el compilador, `let some_number/*: i16*/ = 100;` se ve como `let some_number = 100;`.
 
-The `/* */` form is also useful for very long comments over more than one line. In this example you can see that you need to write `//` for every line. But if you type `/*`, it won't stop until you finish it with `*/`.
+La forma `/* */` también es útil para comentarios muy largos de más de una línea. En este ejemplo puedes ver que necesitas escribir `//` para cada línea. Pero si escribes `/*`, no se detendrá hasta que lo termines con `*/`.
 
 ```rust
 fn main() {
-    let some_number = 100; /* Let me tell you
-    a little about this number.
-    It's 100, which is my favourite number.
-    It's called some_number but actually I think that... */
+    let some_number = 100; /* Permítame contarle
+    un poco sobre este número.
+    Es el 100, que es mi número favorito.
+    Se llama some_number pero en realidad creo que... */
 
-    let some_number = 100; // Let me tell you
-    // a little about this number.
-    // It's 100, which is my favourite number.
-    // It's called some_number but actually I think that...
+    let some_number = 100; // Permítame contarle
+    // un poco sobre este número.
+    // Es el 100, que es mi número favorito.
+    // Se llama some_number pero en realidad creo que...
 }
 ```
 
